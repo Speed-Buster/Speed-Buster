@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашнее задание №8</title>
+    <script src="https://kit.fontawesome.com/98db508811.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: skyblue;
+            color: white;
+        }
+
+        .header-top {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .header-top p {
+            padding: 0 10px;
+            align-self: center;
+            font-size: 26px;
+        }
+
+        img {
+            width: 50px;
+        }
+
+        .main-menu {
+            background: skyblue;
+            color: white;
+            border-radius: 5px 5px 0 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main-menu p {
+            padding-left: 5px;
+        }
+
+        .main-menu i {
+            padding-left: 10px;
+        }
+
+        form {
+            padding: 0 50px; 
+            display: none;
+        }
+
+        .open {
+            display: block;
+        }
+
+        label {
+            padding-left: 70px;
+        }
+
+        .date {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .main-form {
+            font-weight: bold;
+            border: 1px solid skyblue;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .main-form div {
+            padding: 10px 0;
+        }
+
+        input {
+            padding: 5px;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+
+        .main-button {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .main-button input {
+            width: 150px;
+            height: 30px;
+            background: skyblue;
+            border: 1px solid skyblue;
+            border-radius: 5px;
+            font-weight: bold;
+            color:white;
+        }
+
+        .searh {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .main-texterea label {
+            vertical-align: top;
+        }
+
+        .main-texterea textarea {
+            border-radius: 5px;
+        }
+
+        .pet, .main-texterea {
+            display: flex;
+            justify-content:space-between;
+        }
+
+        .pet input {
+            width: 80%;
+        }
+
+        .date input {
+            margin-left: 70px;
+            width: 180px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .petNumber {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 3px solid blue;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <img src="img/hiclipart.png" alt="logo">
+                <p>Wisdom Pet Medicine</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+
+            <div class="main-form">
+                <div class="main-menu">
+                    <i class="fas fa-plus"></i>
+                    <p>Add Appointment</p>
+                </div>
+                <form>
+                    <div class="pet">
+                        <label for="">Pet name</label>
+                        <input type="text" name="name" placeholder="Pet Name">
+                    </div>
+                    <div class="pet">
+                        <label for="">Pet Owner</label>
+                        <input type="text" name="surname" placeholder="Owner's Name">
+                    </div>
+                    <div class="date">
+                        <div>
+                            <label for="">Date</label>
+                            <input type="date" name="date">
+                        </div>
+                        <div>
+                            <label for="">Time</label>
+                            <input type="time" name="time">
+                        </div>
+                    </div>
+                    <div class="main-texterea">
+                        <label for="">Art.Notes</label>
+                        <textarea name="message" cols="100" rows="5" placeholder="Appointment Notes"></textarea>
+                    </div>
+                    <div class="main-button">
+                        <input type="submit" value="Add Appointment">
+                    </div>
+                </form>
+            </div>
+            <div class="searh">
+                <input type="text" name="searh" placeholder="SEARH">
+                <select>
+                    <option value="name">Pet name</option>
+                    <option value="surname">Pet Owner</option>
+                    <option value="date">Date</option>
+                </select>
+            </div>
+            <ul></ul>
+
+        </div>
+    </main>
+</body>
+
+</html>
