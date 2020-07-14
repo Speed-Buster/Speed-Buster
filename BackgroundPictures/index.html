@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Домашнее задание №10</title>
+    <script src="script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 970px;
+            height: 270px;
+            background: rgba(8, 224, 231, 0.5);
+        }
+
+
+        img {
+            width: 300px;
+            height: 250px;
+            margin: 10px;
+        }
+
+        img:hover {
+            transition-property: width, height;
+            transition-duration: 0.5s;
+            width: 330px;
+            height: 280px;
+        }
+        
+        .background1 {
+            background: url(img/1.jpg);
+            background-size: cover;
+            transition-duration: 2s;
+        }
+        .background1 div img:first-child {
+            width: 330px;
+            height: 280px;
+        }
+
+        .background2 {
+            background: url(img/2.jpg);
+            background-size: cover;
+            transition-duration: 2s;
+        }
+
+        .background2 div img:nth-child(2) {
+            width: 330px;
+            height: 280px;
+        }
+
+
+        .background3 {
+            background: url(img/3.jpg);
+            background-size: cover;
+            transition-duration: 2s;
+        }
+
+        .background3 div img:nth-child(3) {
+            width: 330px;
+            height: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id='img1' src="img/1.jpg" alt="мост">
+        <img id='img2' src="img/2.jpg" alt="остров">
+        <img id='img3' src="img/3.jpg" alt="закат">
+    </div>
+
+</body>
+
+</html>
